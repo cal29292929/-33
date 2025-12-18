@@ -3,78 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & App Portfolio | Creative Engineer</title>
+    <title>AI & App Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body { background-color: #0f172a; color: #f8fafc; }
-        .card { background: #1e293b; border-radius: 12px; overflow: hidden; transition: 0.3s; }
+        .card { background: #1e293b; border-radius: 12px; overflow: hidden; transition: 0.3s; height: 100%; }
         .card:hover { transform: translateY(-5px); border: 1px solid #38bdf8; }
+        video, img { width: 100%; height: 200px; object-cover: cover; background: #000; }
     </style>
 </head>
 <body>
 
-    <header class="py-20 text-center">
-        <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
-            Portfolio
+    <header class="py-16 text-center">
+        <h1 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+            AI & Creative Portfolio
         </h1>
-        <p class="mt-4 text-gray-400 text-lg">AI生成・動画・アプリ制作のプロジェクト集</p>
+        <p class="mt-2 text-gray-400">AI画像・動画生成 ＆ アプリケーション開発</p>
     </header>
 
     <main class="max-w-6xl mx-auto px-6 pb-20">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div class="card p-6">
-                <div class="h-48 bg-gray-700 mb-4 rounded flex items-center justify-center text-gray-500">
-                    <span class="text-sm">Image Generation Sample</span>
-                </div>
-                <h2 class="text-xl font-bold mb-2 text-blue-300">AI Art Pipeline</h2>
-                <p class="text-sm text-gray-400 mb-4">Stable Diffusionを用いた一貫性のあるキャラクター生成システム。</p>
-                <div class="flex gap-2">
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">Python</span>
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">Diffusers</span>
-                </div>
+            <div class="card p-4">
+                <video src="imimages/screen-20251001-053532.mp4" autoplay loop muted playsinline></video>
+                <h2 class="text-xl font-bold mt-4 mb-2 text-purple-300">Original Web App</h2>
+                <p class="text-sm text-gray-400">自作アプリのデモンストレーション動画です。UI/UXのデザインとフロントエンド実装を担当しました。</p>
+                <p class="text-xs mt-4 text-gray-500">Tech: Next.js, Tailwind CSS</p>
             </div>
 
-            <div class="card p-6">
-                <div class="h-48 bg-gray-700 mb-4 rounded flex items-center justify-center text-gray-500">
-                    <span class="text-sm">Video Generation Sample</span>
-                </div>
-                <h2 class="text-xl font-bold mb-2 text-emerald-300">Dynamic Motion AI</h2>
-                <p class="text-sm text-gray-400 mb-4">静止画から映画のようなカメラワークを持つショート動画を自動生成。</p>
-                <div class="flex gap-2">
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">AnimateDiff</span>
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">Runway</span>
-                </div>
+            <div class="card p-4">
+                <video src="imimages/MaidBa8.mp4" autoplay loop muted playsinline></video>
+                <h2 class="text-xl font-bold mt-4 mb-2 text-emerald-300">AI Video Generation</h2>
+                <p class="text-sm text-gray-400">AIを用いた動画生成プロジェクト。一貫性を保ちながら滑らかな動きを持つ動画を生成しています。</p>
+                <p class="text-xs mt-4 text-gray-500">Tech: Stable Video Diffusion, AnimateDiff</p>
             </div>
 
-            <div class="card p-6">
-                <div class="h-48 bg-gray-700 mb-4 rounded flex items-center justify-center text-gray-500">
-                    <span class="text-sm">Web App Screenshot</span>
-                </div>
-                <h2 class="text-xl font-bold mb-2 text-purple-300">AI Task Manager</h2>
-                <p class="text-sm text-gray-400 mb-4">LLMがタスクを自動分解・スケジュール化するNext.js製アプリ。</p>
-                <div class="flex gap-2">
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">Next.js</span>
-                    <span class="text-xs bg-slate-700 px-2 py-1 rounded">OpenAI API</span>
-                </div>
+            <div class="card p-4">
+                <img src="imimages/pet-card-ちい.png" alt="AI Image">
+                <h2 class="text-xl font-bold mt-4 mb-2 text-blue-300">AI Image Creation</h2>
+                <p class="text-sm text-gray-400">特定のコンセプトに基づいたAI画像生成。プロンプトエンジニアリングにより高品質な出力を実現。</p>
+                <p class="text-xs mt-4 text-gray-500">Tech: Stable Diffusion, LoRA</p>
             </div>
 
         </div>
-
-        <section class="mt-20 p-8 border border-gray-800 rounded-2xl text-center">
-            <h2 class="text-2xl font-bold mb-4">About Me</h2>
-            <p class="text-gray-400 max-w-2xl mx-auto">
-                AI技術とWeb開発を掛け合わせ、新しいクリエイティブの形を模索しています。
-                GitHubではソースコードも公開しています。
-            </p>
-            <div class="mt-6">
-                <a href="#" class="text-blue-400 hover:underline">GitHub Profile</a>
-            </div>
-        </section>
     </main>
 
     <footer class="py-10 text-center text-gray-600 border-t border-gray-900 text-sm">
-        &copy; 2024 Your Name. All rights reserved.
+        &copy; 2024 Your Name. GitHub Pages Portfolio.
     </footer>
 
 </body>
